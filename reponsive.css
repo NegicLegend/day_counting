@@ -1,0 +1,34 @@
+/* PC & Tablet */
+@media (min-width: 550px) {
+    .hide-on-tb-pc {
+        display: none !important;
+    }
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1099px) {
+    .hide-on-tl-mb {
+        display: none !important;
+    }
+}
+
+/* Tablet */
+@media (min-width: 550px) and (max-width: 1099px) {
+    .hide-on-tl {
+        display: none !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 549px) {
+    .hide-on-mb {
+        display: none !important;
+    }
+}
+
+/* PC */ 
+@media (min-width: 1100px) {
+    .hide-on-pc {
+        display: none !important;
+    }
+}

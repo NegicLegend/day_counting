@@ -1,0 +1,264 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+#wrapper {
+   overflow: hidden !important;
+}
+
+@keyframes showIn {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
+}
+
+.bg {
+   width: 100%;
+   background-color: #0e1538;
+   display: flex;
+   overflow: hidden;
+}
+
+.time-UwU {
+   height: 100%;
+   user-select: none;
+}
+
+.time-yuri {
+   width: 100%;
+   user-select: none;
+   height: auto;
+}
+
+/* Special *//* Special *//* Special *//* Special */
+
+/* Main *//* Main *//* Main *//* Main *//* Main */
+
+.container {
+   flex: 1;
+   position: relative;
+   width: 100%;
+}
+
+.items-wrap {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.input-wrap {
+   width: 100%;
+}
+
+.now-wrap,
+.need-wrap {
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+}
+
+/* Main *//* Main *//* Main *//* Main *//* Main */
+
+/* Date *//* Date *//* Date *//* Date *//* Date */
+
+.input-text {
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   color: white;
+   text-align: center;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 300;
+}
+
+.input-text::before {
+   content: '';
+   border-color: rgba(255, 255, 255, 0.6) transparent transparent transparent;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.input-text::after {
+   content: '';
+   border-color:rgb(14, 21, 56) transparent transparent transparent;
+   border-style: solid;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.need,
+.now {
+   width: 100% !important;
+   background-color: #15215c;
+   outline: none;
+   color: black;
+   border-color: #83d0f2 #d64947 !important;
+   text-transform: uppercase;
+   font-family: 'Bebas Neue', cursive;
+}
+
+.need:hover,
+.now:hover {
+   cursor: pointer;
+}
+
+/* Date *//* Date *//* Date *//* Date *//* Date */
+
+/* calc btn *//* calc btn *//* calc btn *//* calc btn */
+
+.btn {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: white;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 900;
+}
+
+.btn::before {
+   content: '';
+   position: absolute;
+   background: linear-gradient(45deg, #00ccff, #0e1538, #d400d4);
+   transition: 0.3s linear;
+}
+
+.btn:hover:before {
+   filter: blur(10px);
+}
+
+.btn-text {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #0e1538;
+   z-index: 10;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-transform: uppercase;
+}
+
+.btn-text:hover {
+   cursor: pointer;
+}
+
+/* calc btn *//* calc btn *//* calc btn *//* calc btn */
+
+/* Result *//* Result *//* Result *//* Result *//* Result */
+
+.result-wrap {
+   width: 90%;
+}
+
+.result-text {
+   background-color: #15215c;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.result {
+   color: white;
+   max-width: 90%;
+   text-align: center;
+}
+
+/* Result *//* Result *//* Result *//* Result *//* Result */
+
+/* Error *//* Error *//* Error *//* Error *//* Error *//* Error */
+
+.surface {
+   z-index: 100;
+   position: fixed;
+   background-color: rgba(0, 0, 0, 0.5);
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   display: none;
+   opacity: 0;
+   animation: showIn 0.3s linear;
+}
+
+.open-error-box:checked ~ .surface {
+   display: flex;
+   opacity: 1;
+}
+
+.error-body{
+   background-color: white;
+   width: 80%;
+   height: 80%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 10px solid #971919;
+   position: relative;
+   border-radius: 20px;
+}
+
+.error-escape {
+   height: max-content;
+   width: max-content;
+   position: absolute;
+   right: 0;
+   top: 0;
+   border-radius: 50%;
+}
+
+.escape-icon {
+   color: #ccc;
+}
+
+.error-escape:hover {
+   cursor: pointer !important;
+}
+
+.error-title {
+   color: red;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.error-img {
+   width: 100%;
+   user-select: none;
+}
+
+.error-text {
+   text-align: center;
+}
+
+.error-rick {
+   position: absolute;
+   text-decoration: none;
+   color: #ff0000;
+   border: 2px solid #ff0000;
+   border-radius: 10px;
+   background: linear-gradient(to right, white 50%, #ff0000 50%) left;
+   background-size: 210%;
+   transition: 0.15s linear;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 400;
+}
+
+/* Error *//* Error *//* Error *//* Error *//* Error *//* Error */

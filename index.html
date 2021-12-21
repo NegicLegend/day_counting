@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Đếm ngày cùng Kronii</title>
+      <link rel="icon" href="./img/logo2.webp" type="image/x-icon" />
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,900;1,700;1,900&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+      
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="reponsive.css">
+      <link rel="stylesheet" href="reponsive-size.css">
+   </head>
+
+   <body>
+      <div id="wrapper">
+         <div class="bg">
+            <img src="./img/time.jpg" alt="Kronii is the best UwU" class="time-UwU hide-on-tl-mb">
+            <img src="./img/time2.jpg" alt="Kronii x Ame" class="time-yuri hide-on-pc">
+            <div class="container">
+               <div class="items-wrap">
+                  <div class="input-wrap">
+                     <div class="now-wrap">
+                        <p class="input-text">Chọn ngày làm điểm mốc</p>
+                        <input type="date" class="now">
+                     </div>
+                     <div class="need-wrap">
+                        <p class="input-text">Chọn ngày cần tính</p>
+                        <input type="date" class="need">
+                     </div>
+                  </div>
+                  <p class="btn" onclick="clac()">
+                     <span class="btn-text">Tính toán</span>
+                  </p>
+                  <div class="result-wrap">
+                     <div class="result-text">
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <input type="checkbox" name="" id="error-box" hidden class="open-error-box">
+         
+         <label for="error-box" class="surface">
+            <div class="error-body">
+               <label for="error-box" class="error-escape">
+                  <i class="far fa-times-circle escape-icon"></i>
+               </label>
+               <p class="error-title">Không thể tính toán</p>
+               <div class="error-main">
+                  <img src="./img/error.png" alt="Error" class="error-img">
+                  <p class="error-text">Vui lòng điền đầy đủ thông tin</p>
+               </div>
+               <a href="https://www.youtube.com/watch?v=6G7ETEx8I7U" class="error-rick">Tìm hiểu thêm</a>
+            </div>
+         </label>
+      </div>
+   </body>
+   <script src="date.js"></script>
+
+</html>
